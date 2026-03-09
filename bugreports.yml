@@ -1,0 +1,155 @@
+---
+---
+- summary: |
+    La aplicación no ofrece traducción al idioma español y la bandera del idioma inglés no se visualiza correctamente
+  environment: |
+    Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Abrir la aplicación web
+    2. Ubicar el selector de idioma en la interfaz
+    3. Revisar los idiomas disponibles
+    4. Verificar la visualización de la bandera correspondiente al idioma inglés
+  expected-result: |
+    La aplicación debería permitir seleccionar varios idiomas, incluyendo español, y mostrar correctamente las banderas de cada idioma disponible
+  actual-result: |
+    Solo se encuentran disponibles los idiomas inglés y ruso, y la bandera del idioma inglés no se visualiza correctamente
+
+- summary: |
+    El sistema permite agregar productos al carrito pero no dispone de un flujo completo de pago
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la página principal de la aplicación
+    2. Seleccionar un producto
+    3. Hacer clic en "Add to Cart"
+    4. Ir al carrito de compras
+    5. Intentar continuar al proceso de pago
+  expected-result: |
+    El sistema debería permitir continuar con el proceso de compra mostrando los métodos de pago disponibles
+  actual-result: |
+    El sistema solo permite agregar productos al carrito y no muestra opciones para completar el pago
+
+- summary: |
+    Los filtros de productos no se mantienen al regresar desde el detalle de un producto
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la página de productos
+    2. Aplicar un filtro de productos
+    3. Seleccionar un producto filtrado
+    4. Ingresar al detalle del producto
+    5. Regresar a la página anterior
+  expected-result: |
+    El sistema debería mantener el filtro aplicado previamente
+  actual-result: |
+    Al regresar a la página anterior se muestra nuevamente el listado completo de productos y no el resultado filtrado
+
+- summary: |
+    El sistema no solicita iniciar sesión antes de continuar con el proceso de compra
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la aplicación sin iniciar sesión
+    2. Seleccionar un producto
+    3. Agregar el producto al carrito
+    4. Intentar continuar con el proceso de compra
+  expected-result: |
+    El sistema debería solicitar al usuario iniciar sesión o registrarse antes de continuar con la compra
+  actual-result: |
+    El sistema permite continuar con el flujo sin solicitar autenticación del usuario
+
+- summary: |
+    Problemas de compatibilidad al utilizar la aplicación en el navegador Chrome
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Abrir el navegador Chrome
+    2. Ingresar a la URL de la aplicación
+    3. Navegar por las diferentes secciones de la página
+    4. Interactuar con botones y elementos de la interfaz
+  expected-result: |
+    La aplicación debería funcionar correctamente y mostrar todos los elementos de forma adecuada en el navegador Chrome
+  actual-result: |
+    Se presentan problemas de visualización y funcionamiento en algunos elementos de la interfaz
+
+- summary: |
+    Los botones "Previous" y "Next" se superponen sobre el campo de búsqueda version movil
+  environment: |
+    Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la página principal
+    2. Ubicar el campo de búsqueda
+    3. Revisar la posición de los botones "Previous" y "Next"
+  expected-result: |
+    Los botones de navegación deberían estar correctamente alineados sin interferir con el campo de búsqueda
+  actual-result: |
+    Los botones "Previous" y "Next" se superponen sobre el campo de búsqueda
+
+- summary: |
+    Algunos botones sobresalen del contenedor de las tarjetas de productos
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la página principal
+    2. Navegar por las tarjetas de productos
+    3. Revisar la alineación de los botones dentro de las tarjetas
+  expected-result: |
+    Los botones deberían mantenerse dentro de los límites de cada tarjeta de producto
+  actual-result: |
+    Algunos botones sobresalen del contenedor de las tarjetas, generando problemas de alineación
+
+- summary: |
+    En la versión móvil no es responsive
+  environment: |
+   Google Chrome , Windows 11, modo responsive móvil
+  steps-to-reproduce: |
+    1. Abrir la aplicación en modo responsive móvil
+    2. Agregar un producto al carrito
+    3. Ingresar al carrito de compras
+    4. Revisar la visualización de los precios
+  expected-result: |
+    Los precios deberían visualizarse correctamente dentro de la pantalla del dispositivo móvil
+  actual-result: |
+    Los precios se salen de la pantalla y no se visualizan correctamente
+
+- summary: |
+    Bajo contraste entre colores de fondo y texto en la interfaz
+  environment: |
+    Google Chrome , Windows 11, Windows 10
+  steps-to-reproduce: |
+    1. Ingresar a la página principal
+    2. Revisar diferentes secciones de la interfaz
+    3. Comparar los colores de fondo con los del texto
+  expected-result: |
+    El contraste entre el texto y el fondo debería ser suficiente para permitir una lectura clara
+  actual-result: |
+    Algunos textos presentan bajo contraste con el fondo, lo que dificulta la lectura
+
+- summary: |
+    El carrito de compras no permite modificar fácilmente la cantidad de productos
+  environment: |
+    Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la aplicación
+    2. Seleccionar un producto
+    3. Agregar el producto al carrito
+    4. Ingresar al carrito de compras
+    5. Intentar aumentar la cantidad del producto
+  expected-result: |
+    El usuario debería poder modificar fácilmente la cantidad de productos desde el carrito
+  actual-result: |
+    El usuario debe regresar al producto para agregar más unidades, lo que hace que la interacción no sea intuitiva
+
+- summary: |
+    El sistema solo permite buscar productos por marca y no por palabras clave de categoría
+  environment: |
+     Google Chrome , Windows 11
+  steps-to-reproduce: |
+    1. Ingresar a la página principal
+    2. Ubicar el campo de búsqueda
+    3. Ingresar una palabra clave relacionada con una categoría
+    4. Ejecutar la búsqueda
+  expected-result: |
+    El sistema debería mostrar productos relacionados con la palabra clave o categoría ingresada
+  actual-result: |
+    La búsqueda solo funciona por marca y no muestra resultados relacionados con categoría
