@@ -153,5 +153,4 @@
     - Ejecutar la búsqueda
   expected-result: |
     El sistema muestra productos relacionados con la palabra clave ingresada
----
     
