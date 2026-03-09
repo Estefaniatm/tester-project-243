@@ -1,0 +1,41 @@
+---
+- summary: |
+    Verificar disponibilidad y visualización correcta de los idiomas en la aplicación
+  status: fail
+
+- summary: |
+    Verificar que el usuario pueda completar el flujo de compra incluyendo el método de pago
+  status: fail
+
+- summary: |
+    Verificar que los filtros de productos se mantengan al regresar desde el detalle de un producto
+  status: fail
+
+- summary: |
+    Verificar que el sistema solicite autenticación antes de proceder al pago
+  status: fail
+
+- summary: |
+    Verificar la correcta visualización de la interfaz en diferentes navegadores
+  status: fail
+
+- summary: |
+    Verificar que los botones de navegación no se superpongan con el campo de búsqueda
+  status: fail
+
+- summary: |
+    Verificar que la interfaz sea responsiva en dispositivos móviles
+  status: fail
+
+- summary: |
+    Verificar el contraste de colores para garantizar la accesibilidad del contenido
+  status: fail
+
+- summary: |
+    Verificar que el usuario pueda modificar la cantidad de productos desde el carrito
+  status: fail
+
+- summary: |
+    Verificar la funcionalidad de búsqueda por palabras clave o categoría
+  status: fail
+---
