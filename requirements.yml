@@ -22,4 +22,3 @@ implicit:
 - La interacción actual requiere hacer clic directamente en el número, lo cual no resulta intuitivo.
 - El sistema solo permite realizar búsquedas por marca.
 - No se pueden buscar productos utilizando palabras clave relacionadas con la categoría, lo cual limita la experiencia de búsqueda del usuario.
----
