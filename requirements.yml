@@ -1,0 +1,25 @@
+---
+Functional:
+- La aplicación no ofrece traducción al idioma español.
+- Solo se encuentran disponibles los idiomas inglés y ruso.
+- La bandera correspondiente al idioma inglés no se visualiza correctamente, lo que genera confusión en la selección de idioma.
+- La aplicación permite agregar productos al carrito, pero no dispone de un flujo completo de pago.
+- No se encuentra implementado ningún método de pago (tarjeta, transferencia, pasarela de pago, etc.).
+- Al aplicar un filtro por producto y acceder al detalle del mismo, al regresar a la página anterior el sistema muestra nuevamente el listado completo de productos en lugar de mantener el filtro previamente aplicado.
+- El sistema no solicita iniciar sesión antes de proceder al proceso de compra.
+- El usuario puede avanzar en el flujo sin autenticación ni validación de cuenta.
+- Se detectaron problemas de compatibilidad al utilizar la aplicación en el navegador Chrome, lo cual afecta la correcta visualización o funcionamiento de ciertas funcionalidades.
+non-functional:
+- Los botones Previous y Next se superponen sobre el campo de búsqueda (Search).
+- Algunos botones Add to Cart presentan tamaños inconsistentes y en vista móvil exceden el espacio disponible.
+- Algunos botones sobresalen del contenedor de las tarjetas de productos (cards).
+- En la versión móvil, los precios dentro del carrito de compras se desbordan fuera de la pantalla.
+- Los colores de fondo y primer plano presentan bajo contraste, Esto dificulta la lectura del contenido y afecta la accesibilidad para usuarios con discapacidad visual.
+- El sistema respondió correctamente a las solicitudes realizadas durante la prueba.
+implicit:
+- El carrito de compras no permite modificar fácilmente la cantidad de productos.
+- Para agregar más unidades, el usuario debe regresar al producto y agregarlo nuevamente.
+- La interacción actual requiere hacer clic directamente en el número, lo cual no resulta intuitivo.
+- El sistema solo permite realizar búsquedas por marca.
+- No se pueden buscar productos utilizando palabras clave relacionadas con la categoría, lo cual limita la experiencia de búsqueda del usuario.
+---
