@@ -1,0 +1,157 @@
+---
+- summary: |
+    Verificar disponibilidad y visualización correcta de los idiomas en la aplicación
+  requirement: |
+    La aplicación debe permitir seleccionar correctamente los idiomas disponibles y mostrar sus respectivos iconos de forma adecuada
+  prerequisites: |
+    La aplicación está abierta en la página principal
+  test-data: |
+    Idiomas disponibles: Inglés y Ruso
+  steps:
+    - Ingresar a la página principal
+    - Ubicar el selector de idioma
+    - Verificar las banderas disponibles
+    - Intentar cambiar el idioma
+  expected-result: |
+    Las banderas se visualizan correctamente y el sistema cambia el idioma seleccionado sin errores
+
+- summary: |
+    Verificar que el usuario pueda completar el flujo de compra incluyendo el método de pago
+  requirement: |
+    El sistema debe permitir agregar productos al carrito y continuar al proceso de pago con métodos disponibles
+  prerequisites: |
+    La página principal está cargada y existen productos disponibles
+  test-data: |
+    Producto de prueba agregado al carrito
+  steps:
+    - Seleccionar un producto
+    - Hacer clic en "Add to Cart"
+    - Ingresar al carrito de compras
+    - Intentar continuar al proceso de pago
+  expected-result: |
+    El sistema permite continuar al proceso de pago y muestra métodos de pago disponibles
+
+- summary: |
+    Verificar que los filtros de productos se mantengan al regresar desde el detalle de un producto
+  requirement: |
+    El sistema debe mantener los filtros aplicados cuando el usuario regresa a la lista de productos
+  prerequisites: |
+    La página de productos está abierta
+  test-data: |
+    Filtro aplicado por categoría o tipo de producto
+  steps:
+    - Aplicar un filtro de productos
+    - Seleccionar un producto de la lista
+    - Ingresar al detalle del producto
+    - Regresar a la página anterior
+  expected-result: |
+    La lista de productos mantiene el filtro previamente aplicado
+
+- summary: |
+    Verificar que el sistema solicite autenticación antes de proceder al pago
+  requirement: |
+    El sistema debe requerir que el usuario inicie sesión antes de continuar con el proceso de compra
+  prerequisites: |
+    Existe al menos un producto agregado al carrito
+  test-data: |
+    Usuario no autenticado
+  steps:
+    - Agregar un producto al carrito
+    - Ingresar al carrito
+    - Intentar continuar al proceso de compra
+  expected-result: |
+    El sistema solicita iniciar sesión o registrarse antes de continuar con el proceso de compra
+
+- summary: |
+    Verificar la correcta visualización de la interfaz en diferentes navegadores
+  requirement: |
+    La aplicación debe ser compatible con los navegadores modernos, incluyendo Chrome
+  prerequisites: |
+    La aplicación está disponible para acceso web
+  test-data: |
+    Navegador: Chrome
+  steps:
+    - Abrir el navegador Chrome
+    - Ingresar a la URL de la aplicación
+    - Navegar por la página principal
+    - Interactuar con los botones y funcionalidades principales
+  expected-result: |
+    La aplicación se visualiza correctamente y todas las funcionalidades operan sin errores
+
+- summary: |
+    Verificar que los botones de navegación no se superpongan con el campo de búsqueda
+  requirement: |
+    Los elementos de la interfaz deben mantener una correcta alineación sin superponerse
+  prerequisites: |
+    La página principal está abierta
+  test-data: |
+    Navegación en vista de escritorio
+  steps:
+    - Ingresar a la página principal
+    - Ubicar los botones "Previous" y "Next"
+    - Revisar la posición del campo de búsqueda
+  expected-result: |
+    Los botones de navegación no se superponen con el campo de búsqueda
+
+- summary: |
+    Verificar que la interfaz sea responsiva en dispositivos móviles
+  requirement: |
+    La aplicación debe adaptarse correctamente a diferentes tamaños de pantalla
+  prerequisites: |
+    Acceso a la aplicación desde un dispositivo móvil o modo responsive
+  test-data: |
+    Vista móvil activada en el navegador
+  steps:
+    - Abrir la aplicación en modo móvil
+    - Navegar por la lista de productos
+    - Revisar los botones "Add to Cart"
+    - Ingresar al carrito de compras
+  expected-result: |
+    Los elementos se ajustan correctamente a la pantalla sin desbordamientos
+
+- summary: |
+    Verificar el contraste de colores para garantizar la accesibilidad del contenido
+  requirement: |
+    El texto y los elementos visuales deben tener suficiente contraste con el fondo para facilitar la lectura
+  prerequisites: |
+    La página principal está cargada
+  test-data: |
+    Colores de fondo y primer plano del sitio
+  steps:
+    - Revisar los textos principales de la interfaz
+    - Comparar los colores del texto con el fondo
+    - Navegar por diferentes secciones del sitio
+  expected-result: |
+    El contraste de colores permite una lectura clara del contenido
+
+- summary: |
+    Verificar que el usuario pueda modificar la cantidad de productos desde el carrito
+  requirement: |
+    El carrito de compras debe permitir modificar la cantidad de productos de forma directa
+  prerequisites: |
+    Existe al menos un producto agregado al carrito
+  test-data: |
+    Producto agregado al carrito con cantidad inicial de 1
+  steps:
+    - Ingresar al carrito de compras
+    - Localizar el producto agregado
+    - Intentar aumentar la cantidad desde el carrito
+  expected-result: |
+    El usuario puede modificar la cantidad de productos directamente desde el carrito
+
+- summary: |
+    Verificar la funcionalidad de búsqueda por palabras clave o categoría
+  requirement: |
+    El sistema debe permitir buscar productos mediante palabras clave relacionadas con la categoría
+  prerequisites: |
+    La página principal está abierta
+  test-data: |
+    Palabra clave de búsqueda: ropa
+  steps:
+    - Ubicar el campo de búsqueda
+    - Ingresar una palabra clave relacionada con una categoría
+    - Ejecutar la búsqueda
+  expected-result: |
+    El sistema muestra productos relacionados con la palabra clave ingresada
+---
+    
